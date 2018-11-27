@@ -29,9 +29,8 @@ end
 
 
 def take_a_number(katz_deli, string)
-  if katz_deli.length > 0
     katz_deli.push(string)
-  else
-    katz_deli.unshift(string)
+    position = katz_deli.index(string) + 1
+    puts "Welcome #{string}. You're #{position} in line."
   end
 end
