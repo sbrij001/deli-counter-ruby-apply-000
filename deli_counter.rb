@@ -29,6 +29,9 @@ end
 
 
 def take_a_number(katz_deli, string)
-  katz_deli.push(string)
-  puts "Welcome #{string}. You're  "
+  if katz_deli.length > 0
+    katz_deli.push(string)
+  else
+    katz_deli.unshift(string)
+  end
 end
