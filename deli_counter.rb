@@ -38,8 +38,8 @@ end
 
 def now_serving(katz_deli)
   if katz_deli.length > 0
-    serving = katz_deli.pop
-    puts "The next person in line is #{serving}"
+    serving = katz_deli.unshift
+    puts "Currently serving #{serving}."
   else
     puts "There is nobody waiting to be served!"
   end
