@@ -38,7 +38,7 @@ end
 
 def now_serving(katz_deli)
   if katz_deli.length > 0
-    serving = katz_deli.unshift
+    serving = katz_deli.shift
     puts "Currently serving #{serving}."
   else
     puts "There is nobody waiting to be served!"
