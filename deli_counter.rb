@@ -37,9 +37,10 @@ end
 #should say that the line is empty when empty
 
 def now_serving(katz_deli)
-  if
-
+  if katz_deli.length > 0
+    serving = katz_deli.pop
+    puts "The next person in line is #{serving}"
   else
     puts "There is nobody waiting to be served!"
-
+  end
 end
