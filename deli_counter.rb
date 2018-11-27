@@ -32,5 +32,4 @@ def take_a_number(katz_deli, string)
     katz_deli.push(string)
     position = katz_deli.index(string) + 1
     puts "Welcome #{string}. You're #{position} in line."
-  end
 end
