@@ -20,16 +20,26 @@ def line(katz_deli)
 end
 
 
-#take_a_number should accept 2 arguments katz_deli and a string
-#return the name along with their position in line
+# #take_a_number should accept 2 arguments katz_deli and a string
+# #take_a_number should call out (puts) the person's name along with their position in line.
 #if #take_a_number is empty it needs to add a person to the line
 #if there are already people in the line #take_a_number should add a person to the end of the line
 #needs to be able to add mult people in a row
 #tip  Remember that people like to count from 1, not from 0 ("zero") like computers.
-
-
 def take_a_number(katz_deli, string)
     katz_deli.push(string)
     position = katz_deli.index(string) + 1
     puts "Welcome, #{string}. You are number #{position} in line."
+end
+
+#create a method #now_serving that takes in  an array
+#should serve the first person in line and remove them from the queue
+#should say that the line is empty when empty
+
+def now_serving(katz_deli)
+  if
+
+  else
+    puts "There is nobody waiting to be served!"
+
 end
