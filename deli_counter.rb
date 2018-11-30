@@ -39,7 +39,7 @@ end
 # puts the message using string interpolation.
 
 def take_a_number(katz_deli, string)
-    katz_deli.push(string) #will evaulate to the katz_deli arr
+    katz_deli.push(string) # will evaulate to the katz_deli arr
     position = katz_deli.index(string) + 1 #will evaulate to the index where the ele is found + 1.
     puts "Welcome, #{string}. You are number #{position} in line."
 end
@@ -55,7 +55,7 @@ end
 
 def now_serving(katz_deli)
   if katz_deli.length > 0
-    serving = katz_deli.shift #which will remove the first element and evaluate to the element I am trying to remove.
+    serving = katz_deli.shift # which will remove the first element and evaluate to the element I am trying to remove.
     puts "Currently serving #{serving}."
   else
     puts "There is nobody waiting to be served!"
